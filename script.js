@@ -7,7 +7,7 @@ const valentinesWeek = [
     date: "02-07",
     name: "Rose Day 🌹",
     message: "A rose for you, for all the love you bring into my life.",
-    image: "images/rose_day.jpg"
+    image: "images/rose_day.JPG"
   },
   {
     date: "02-08",
