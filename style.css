@@ -1,0 +1,219 @@
+
+ * {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 16px; /* important for mobile edges */
+}
+
+.container {
+  background: white;
+  padding: 28px 22px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 460px; /* slightly bigger */
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+
+h1 {
+  color: #e6005c;
+  margin-bottom: 10px;
+  font-size: 26px;
+  margin-top: 5px;
+}
+h3 {
+  color: #e6005c;
+  margin-bottom: 10px;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* select {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0 22px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+} */
+ select {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0 22px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+
+  text-align: center;          /* center selected value */
+  text-align-last: center;     /* IMPORTANT for Chrome/Edge */
+}
+
+/* For dropdown list items (works in Firefox & some browsers) */
+select option {
+  text-align: center;
+}
+
+/* ❤️ MAIN CARD */
+.card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 18px;
+  min-height: 180px; /* bigger card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  color: #444;
+  line-height: 1.6;
+  box-shadow: inset 0 0 0 rgba(0,0,0,0.05);
+}
+
+/* 📱 Mobile fine-tuning */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .card {
+    font-size: 18px;
+    min-height: 200px; /* feels fuller on phone */
+    padding: 26px 18px;
+  }
+}
+
+.day-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.day-message {
+  margin-bottom: 18px;
+}
+
+.day-image {
+  width: 100%;
+  max-width: 260px;   /* consistent size */
+  height: auto;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* 📱 Mobile enhancement */
+@media (max-width: 480px) {
+  .day-image {
+    max-width: 100%;
+  }
+}
+
+/* 💌 Floating quotes background */
+
+.quotes-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Individual quote */
+.quotes-bg span {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 14px;
+  font-style: italic;
+  max-width: 160px;
+  line-height: 1.4;
+}
+
+/* Random placements */
+.quotes-bg span:nth-child(1) {
+  top: 10%;
+  left: 8%;
+}
+
+.quotes-bg span:nth-child(2) {
+  top: 30%;
+  right: 10%;
+}
+
+.quotes-bg span:nth-child(3) {
+  bottom: 25%;
+  left: 12%;
+}
+
+.quotes-bg span:nth-child(4) {
+  bottom: 12%;
+  right: 8%;
+}
+
+.quotes-bg span:nth-child(5) {
+  top: 55%;
+  left: 55%;
+}
+
+/* ❤️ Floating hearts background */
+.hearts-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1; /* below card, above background */
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  font-size: 26px;          /* BIGGER hearts */
+  opacity: 0.7;
+  animation: floatHeart linear infinite;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
+}
+
+/* Floating animation */
+@keyframes floatHeart {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* Keep main content above quotes */
+.container {
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 480px) {
+  .quotes-bg span {
+    font-size: 12px;
+    max-width: 120px;
+    opacity: 0.45;
+  }
+  .heart {
+    font-size: 22px;        /* still big, but not overwhelming */
+    opacity: 0.6;
+  }
+}
+
+
+
