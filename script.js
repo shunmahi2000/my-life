@@ -222,7 +222,7 @@ valentinesWeek.forEach((day, index) => {
 
 // If today not in range → Stay tuned
 if (todayIndex === -1) {
-  contentDiv.innerText = "Stay tuned 💌 Valentine week is coming soon!";
+  contentDiv.innerText = "Stay tuned 💌 Valentine week  is coming soon!";
 } else {
   daySelect.value = todayIndex;
   showContent(todayIndex);
