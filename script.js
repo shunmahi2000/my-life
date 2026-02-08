@@ -19,19 +19,19 @@ const valentinesWeek = [
     date: "02-09",
     name: "Chocolate Day 🍫",
     message: "Life is sweeter with you, just like chocolate.",
-    image: "images/chocolate_day/main.jpg"
+    image: "images/choco_day.jpg"
   },
   {
     date: "02-10",
     name: "Teddy Day 🧸",
-    message: "Sending you the warmest hug through this teddy.",
-    image: "images/teddy_day/main.jpg"
+    message: "Sending you the warmest hug through frostu.",
+    image: "images/teddy_day.jpg"
   },
   {
     date: "02-11",
     name: "Promise Day 🤝",
-    message: "I promise to care, respect, and cherish you always.",
-    image: "images/promise_day/main.jpg"
+    message: "I promise to always profess, provide and protect you. ❣️ and respect you in every situation ☺️",
+    image: "images/promise_day.jpg"
   },
   {
     date: "02-12",
