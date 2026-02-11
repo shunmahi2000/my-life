@@ -37,19 +37,19 @@ const valentinesWeek = [
     date: "02-12",
     name: "Hug Day 🤗",
     message: "This hug is to remind you you’re never alone.",
-    image: "images/hug_day/main.jpg"
+    image: "images/hug_day.jpg"
   },
   {
     date: "02-13",
     name: "Kiss Day 💋",
     message: "A kiss to seal all the feelings words can’t express.",
-    image: "images/kiss_day/main.jpg"
+    image: "images/kiss_day.jpg"
   },
   {
     date: "02-14",
     name: "Valentine’s Day ❤️",
-    message: "Happy Valentine’s Day. You’re my today and all my tomorrows.",
-    image: "images/valentines_day/main.jpg"
+    message: "Happy Valentine’s Day Love ♥️. You’re my today and all my tomorrows.",
+    image: "images/valentines_day.jpg"
   }
 ];
 const quotesByDay = {
