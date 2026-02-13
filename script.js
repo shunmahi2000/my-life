@@ -36,7 +36,7 @@ const valentinesWeek = [
   {
     date: "02-12",
     name: "Hug Day 🤗",
-    message: "This hug is to remind you you’re never alone.",
+    message: "This hug is to remind you you’re never alone ",
     image: "images/hug_day.jpg"
   },
   {
